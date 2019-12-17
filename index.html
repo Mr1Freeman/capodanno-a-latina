@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Capodanno a Latina</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        Capodanno a Latina
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Ristoranti</a></li>
+            <li><a href="disco.html">Disco</a></li>
+            <li><a href="disco.html">Dal piu basso</a></li>
+            <li><a href="disco.html">Dal piu alto</a></li>
+
+        </ul>
+    </nav>
+    <article>
+        <section>
+            <img src="risto-images/ritrovo/ritrovo.png" alt="Ristorante ritrovo" height="42" width="42"></section>
+        <section>Ritrovo</section>
+        <section>Borgo Carso</section>
+        <section>Prezzo Menu Carne
+            <span>85</span></section>
+        <section>Prezzo Menu Pesce <span>95</span></section>
+        <section>Menu </section>
+        <section class="volantino">
+            Volantino
+            <span onclick="myfunction()">
+            <img  id="myImg" src="./risto-images/ritrovo/ritrovo-menu.png" alt="Ristorante ritrovo" height="42" width="42"></section>
+            </span>
+        </section>
+
+
+    </article>
+    <footer>
+        Created by Pylypenko yaroslav
+    </footer>
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+</body>
+<script src="./script.js"></script>
+<script src="./lib/modal.js"></script>
+
+
+
+</html>

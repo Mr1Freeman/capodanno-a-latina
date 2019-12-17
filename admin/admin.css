@@ -1,0 +1,8 @@
+#admin-form {
+    display: flexbox;
+    text-align: center;
+}
+
+.input-form {
+    margin: 10px 10px 10px 10px;
+}

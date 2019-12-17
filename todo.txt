@@ -1,0 +1,12 @@
+1) lista paesi vicino a latina
+2) struttura sito
+3) categorie locali 
+4) struttura database
+5) admin panel
+    //ENTRARE CON PASSWORD
+    a) Aggiungere Nome locale
+    b) Posizione
+    c) Prezzo
+    d) Immagine  
+6) ricerca sul sito in base al prezzo
+

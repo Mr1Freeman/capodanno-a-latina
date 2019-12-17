@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin page</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+
+<body>
+    <div id="admin-form">
+        <form action="">
+            <div class="name input-form">
+                Nome Ristorante </br>
+                <input type="text" name="rist-name" size="35">
+            </div>
+            <div class="location input-form">
+                Posizione</br>
+                <input type="text" name="location" size="35">
+            </div>
+            <div class="price input-form">
+                Prezzo Menu Carne</br>
+                <input type="number" min="0" step="1" name="price-meat">
+            </div>
+            <div class="price input-form">
+                Prezzo Menu Pesce</br>
+                <input type="number" min="0" step="1" name="price-fish">
+            </div>
+            <div class="imageform input-form">
+                Foto Ristorante</br>
+                <input type="file" name="rist-foto" onchange="loadFile(event)">
+            </div>
+            <div class="imageform input-form">
+                Foto Menu</br>
+                <input type="file" name="foto-menu" onchange="loadFile(event)">
+            </div>
+            <div class="location input-form">
+                Menu Text</br>
+                <textarea rows="25" cols="100">
+            </textarea>
+            </div>
+
+
+            <input type="submit">
+
+    </div>
+    </form>
+    <img id="output" />
+    <script>
+        var loadFile = function(event) {
+            var reader = new FileReader();
+            reader.onload = function() {
+                var output = document.getElementById('output');
+                output.src = reader.result;
+            };
+            reader.readAsDataURL(event.target.files[0]);
+        };
+    </script>
+</body>
+
+</html>
